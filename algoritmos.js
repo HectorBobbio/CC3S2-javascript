@@ -32,6 +32,17 @@ function greatestNumber_n(array){
     return greatest
 }
 
+function containsX(string) {
+    foundX = false;
+    for(let i = 0; i < string.length; i++) {
+     if (string[i] === "X") {
+       foundX = true;
+       }
+     }
+     return foundX;
+    }
+
+
 array = [3,4,5,10,9]
 console.log(greatestNumber_n(array))
 console.log(greatestNumber_n2(array))

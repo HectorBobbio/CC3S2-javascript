@@ -23,6 +23,7 @@ function f1(x) {
     }
 }
 var bar = f1(5);
-bar(11); # 19
+bar(11); // 19
 ```
+`bar = f1(5)` define el primer valor que pasamos a la funcion `f1`, pero queda pendiente resolver la función anidada en ella. Para esto usamos `bar(11)`. Sin embargo, no obtenemos el resultado que podriamos haber intuido, esto es porque JS maneja la funcion de incremento de manera distinta. `var++` incrementa var por uno  devuelve el valor de `var` antes del incremento, mientras que `++var` hace el incremento y devuelve el valor después de realizado el incremento. 
 
